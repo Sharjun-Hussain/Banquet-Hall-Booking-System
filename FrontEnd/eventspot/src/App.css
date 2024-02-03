@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+
+  background-color: rgb(57, 54, 70) !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+.NavBar {
+  background-color: rgb(255, 255, 255);
+}
+
+.text-bold {
+  font-weight: 600 !important;
+}
+
+/* Desktop View Responsive */
+
+@media only screen and (min-width: 1024px) {
+  .SearchTitleOne {
+    color: white;
+    padding-top: 200px;
+    font-size: 40px;
+    z-index: 3;
+    position: absolute;
+  }
+
+  .SearchTitleTwo {
+    color: white;
+    font-size: 28px;
+    z-index: 4;
+    position: absolute;
+  }
+
+  .var {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-fluid {
+    padding-left: 0px !important;
+  }
+
+  .card1 {
+    position: relative;
+    height: 320px !important;
+    width: 35vw !important;
+    min-width: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent !important;
+    color: white;
+    border-color: red !important;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .img {
+    position: absolute;
+    width: 20vw !important;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-body1 {
+    padding-top: 210px !important;
+  }
+}
+
+/* Tablet View Responsive */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .SearchTitleOne {
+    color: white;
+    padding-top: 70px;
+    font-size: 35px;
+  }
+
+  .SearchTitleTwo {
+    color: white;
+    font-size: 25px;
+  }
+
+  .container-fluid {
+    padding-left: 0px !important;
+  }
+
+  .card1 {
+    position: relative;
+    height: 320px !important;
+    width: 35vw !important;
+
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent !important;
+    color: white;
+    border-color: white !important;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .img {
+    position: absolute;
+    width: 10vw !important;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-body1 {
+    padding-top: 210px !important;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .SearchTitleOne {
+    color: white;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px !important;
+  }
+
+  .SearchTitleTwo {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px !important;
+  }
+}
+
+/* MObile View REsponsive */
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .SearchTitleOne {
+    color: white;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px !important;
+  }
+
+  .SearchTitleTwo {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .SearchTitleOne {
+    color: white;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px !important;
+  }
+
+  .SearchTitleTwo {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px !important;
+  }
+}
+
+.carasoul {
+  z-index: 1;
+  position: relative;
+}
+
+.Nav-Link.active {
+  background-color: chocolate;
+}
+
+.Nav-Link {
+  list-style: none;
+}
+
+.FrontNavBarItem {
+  color: firebrick !important;
+  list-style: none;
+}
+/* UserAuth Register And Login */
+
+/* form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transform: translate(70%,10%);
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  ;
+} */
+
+.form {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+.Form-Box {
+  background-color: burlywood;
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+/* form{
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 800px;
+  padding: 20px;
+  justify-content: space-between;
+  background-color:transparent;
+  border-radius: 20px;
+  border: 2px solid black;
+
+  
+} */
+form .p1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+form .p1 .form-item {
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50%);
+}
+form .p2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+form .p2 .form-item {
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50%);
+}
+form .p3 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+form .p3 .form-item {
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50%);
+}
+form .p4 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+form .p4 .form-item {
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50%);
+}
+form .p5 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+form .form-item {
+  display: flex;
+  flex-direction: row;
+  transform: translate(-50%);
+}
+.p5 .p51 {
+  justify-content: space-evenly;
+  padding-left: 55px;
+}
+
+.p6 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+.p6 label {
+  justify-content: flex-start;
+}
+
+/* .form input[type=text],[type=password],[type=email]{
+  width: 150%;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: transparent;
+  color:WHITE;
+  border-bottom: 1px solid white;
+} */
+
+.card1 {
+  position: relative;
+  height: 320px !important;
+
+  width: 100%;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent !important;
+  color: white;
+  border-color: rgb(57, 54, 70) !important;
+  box-shadow: 5px 3px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.img {
+  position: absolute;
+  width: 150px !important;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-body1 {
+  padding-top: 210px !important;
+}
+
+.card2 {
+  position: relative;
+
+  height: 430px !important;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent !important;
+  color: white;
+  border-color: rgb(57, 54, 70) !important;
+  box-shadow: 5px 3px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card2 button {
+  border: 2px solid white;
+  background-color: rgb(84, 54, 109);
+}
+
+.main-Foo {
+  background-color: rgba(255, 255, 255, 0.692) !important;
+  bottom: 0 !important;
+}
+.Foo-logo {
+  width: 30vw;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Foo-Header {
+  padding-top: 40px;
+  color: rgb(48, 46, 58);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.Foo-Content {
+  padding-top: 0px;
+  color: rgb(57, 54, 70);
+  font-size: 18px;
+  border: 2px solid black;
+  padding: 15px 40px 15px 40px;
+  border-radius: 50px;
+  box-shadow: 4px 3px 2px black;
+}
+
+.Foo-Content:hover {
+  color: rgb(57, 54, 70);
+  font-weight: 700 !important;
+  cursor: pointer;
+}
+
+.Foo-Content::after {
+  color: darkorange;
+}
+
+.Foo-Logo-text-Head {
+  font-size: 15px;
+}
+
+.Foo-last {
+  font-size: 15px;
+  text-align: center;
+}
+.hr {
+  border-top: 3px solid rgb(0, 0, 0);
+  opacity: 100;
+  margin-top: 2px;
+}
+
+.foo-text {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+#hh {
+  transform: translate(220px);
+}
+
+.form {
+  border: 2px solid white !important;
+  width: 800px !important;
+  min-height: 700px !important;
+  border-radius: 10px !important;
+}
+
+.form label {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .form .checklabel {
+    font-size: 0.8rem;
+    transform: translate(0, -3px);
+  }
+}
+
+.form input {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-bottom: 2px solid white;
+  padding-top: 5px;
+  outline: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.form button {
+  border: 2px solid white;
+  background-color: rgb(84, 54, 109);
+}
+
+.adminLoginContainer {
+  height: 100vh;
+  box-shadow: 5px 3px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.AdminLoginSpan {
+  border: 3px solid black;
+  height: 450px;
+  border: none;
+  border-left: 5px solid;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* .AdminLoginSpan input[type="email"],input[type="password"]
+{
+  outline: none;
+  border: none;
+  width: 400px;
+  border-bottom: 2px solid black;
+  background: transparent;
+  color: white;
+  
+} */
+
+@media screen and (max-width: 768px) {
+  .MobileLoginMargin {
+    margin-top: 100px;
+    padding-top: 100px;
+  }
+}
+
+.adminLoginButton {
+  width: 30px !important;
+  border-radius: 50% !important;
+}
+
+.adminLoginBtn {
+  border-radius: 6px !important;
+  background-color: rgb(84, 54, 109) !important;
+  border-color: rgb(56, 37, 71) !important;
+  border: 2px solid;
+  color: white;
+}
+
+label[for="remember"] {
+  font-size: 14px;
+  color: cadetblue;
+}
+
+input[type="checkbox"] {
+  transform: scale(0.8);
+}
+
+.adminprofilelogo {
+  cursor: pointer;
+}
+
+hero {
+  height: 100vh !important;
+  width: 100vw !important;
+}
+.carasoulBody {
+  z-index: 1;
+  
+  filter: brightness(0.3);
+  
+}
+.carasoulText {
+  z-index: 2;
+  position: absolute;
+  font-size: 8vw;
+  filter: brightness(1);
+  color: white;
+}
+
+.adminNavBar {
+  font-size: 30px;
+  height: 80px;
+}
+
+/* AdminDashboard SidebAr */
+
+.AdminDashboardSideBar {
+  height: 100vh;
+}
+
+.AdminDashboardSideBarItem {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.AdminDashboardSideBarItemText {
+  text-decoration: none;
+  font-size: 18px;
+  color: White;
+}
+
+.AdminDashboardSideBarItem:hover {
+  color: white;
+  background-color: rgb(22, 46, 119);
+}
+.active {
+  background-color: white !important;
+}
+
+.aboutBackgeoundImage {
+  width: 100%;
+
+  height: 500px;
+  background-image: url("./Assets/Images/AboutBackgeound.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.aboutBackgeoundText {
+  position: absolute;
+  font-size: 75px;
+  color: brown;
+}
+
+.AboutContent {
+  font-size: 22px;
+  color: white;
+}
