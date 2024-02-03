@@ -28,7 +28,7 @@ const PopUp = (props) => {
           "http://localhost:8000/admin/api/halls"
         );
         
-        let ResponseData = Object.values(response.data.Halls);
+        let ResponseData = Object.values(response.data.Halls);   //Change Object Values like (response.data.Halls mean from getting data from backend is convert to array otherwise it will say 'is not function'
         setHalls( ResponseData);
       } catch (errer) {
         console.log(errer);
