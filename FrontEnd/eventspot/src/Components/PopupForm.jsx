@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import DatePicker from "react-datepicker";
-import subDays from "date-fns/subDays";
+
 import "react-datepicker/dist/react-datepicker.css";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -27,12 +27,15 @@ const PopUp = (props) => {
         const response = await axios.get(
           "http://localhost:8000/admin/api/halls"
         );
-        const ResponseData = response.data.Halls;
-        setHalls(...Halls, ResponseData);
+        
+        let ResponseData = Object.values(response.data.Halls);
+        setHalls( ResponseData);
       } catch (errer) {
         console.log(errer);
       }
     };
+
+    FetchHalls();
   }, []);
 
   // Functions
@@ -175,19 +178,15 @@ const PopUp = (props) => {
                       onChange={(e) => setHall(e.target.value)}
                     >
                       <option>Open this select menu</option>
-                      {/* {Halls.map((hall, key) => {
+                      {Halls.map((hall, key) => {
                         return (
-                          <ol>
-                            <li>{hall}</li>
-                            {console.log(hall)}
-                          </ol>
+                          <option key={key}>{hall.HallName}</option>
+                          
+                          
                         );
-                      })} */}
+                      })}
 
-                      <option value="64893f7516426dc8b68124bc">Lee Meridian</option>
-                        <option value="64893f7516426dc8b68124bd">Paradise</option>
-                        <option value="64893f7516426dc8b68124bf">Bawa Royal</option>
-                        <option value="64893f7516426dc8b68124be">Pearls </option>
+                      
                     </Form.Select>
                   </Form.Group>
                   <Form.Group>
