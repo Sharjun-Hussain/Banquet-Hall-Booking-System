@@ -11,9 +11,9 @@
 
 ## Installation:
 
->Clone the repository from [GitHub](https://github.com/Sharjun-Hussain/EventnSpot-Web-Application.git)
+>Clone the repository from [GitHub](https://github.com/Sharjun-Hussain/Banquet-Hall-Booking-System.git)
 ```bash
-  git clone https://github.com/Sharjun-Hussain/EventnSpot-Web-Application.git
+  git clone https://github.com/Sharjun-Hussain/Banquet-Hall-Booking-System.git
 ```
 ### Open a terminal or command prompt and navigate to the project directory.
 
@@ -21,7 +21,7 @@
 
 > Navigate to the `backend` directory within the project directory.
 ```bash
-  cd EventnSpot-Web-Application
+  cd Banquet Hall Booking System
 ```
 > Install the backend dependencies by running the command: npm install.
 ```bash
@@ -59,6 +59,6 @@ Usage and Features:
 ### Credentials :
 
 ```bash
-UserName : Admin@gmail.com
-Password : Admin
+UserName : joon@gmail.com
+Password : joon
 ```
