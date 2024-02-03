@@ -10,6 +10,15 @@ body {
 a {
   text-decoration: none !important;
 }
+
+.modal-content{
+  background-color:rgb(37, 35, 35) !important ;
+  
+}
+
+label{
+  color: white !important;
+}
 .NavBar {
   background-color: rgb(255, 255, 255);
 }
