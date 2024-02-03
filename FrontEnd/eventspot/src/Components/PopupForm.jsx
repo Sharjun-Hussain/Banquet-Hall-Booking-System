@@ -42,7 +42,6 @@ const PopUp = (props) => {
 
   const validatePhoneNumber = () => {
     const phoneNumberPattern = /^[0-9]{10}$/; // Assuming a 10-digit phone number
-
     if (!phoneNumberPattern.test(Mobile)) {
       setPhoneNumberError(
         "Invalid phone number format Make Sure It has 10 Digits !"
@@ -50,23 +49,18 @@ const PopUp = (props) => {
 
       return false;
     }
-
     setPhoneNumberError("");
-
     return true;
   };
 
   const validateEmail = () => {
     const EmailPattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-
     if (!EmailPattern.test(Email)) {
       setEmailError("Invalid Email Make Sure You Typed Correct Mail Address !");
-
       return false;
     }
 
     setEmailError("");
-
     return true;
   };
 
