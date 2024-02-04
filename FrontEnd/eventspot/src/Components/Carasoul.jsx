@@ -8,7 +8,7 @@ import back3 from '../Assets/back3.webp'
 
 export const Carasoul = () => {
     return (
-        <div className='d-flex justify-content-center align-items-center hero'>
+        <div className='d-flex justify-content-center align-items-center hero car'>
             <div className='carasoulText '>
                 EventSpot  Hall Booking
             </div>
@@ -45,6 +45,7 @@ export const Carasoul = () => {
                     </Col>
                 </Row>
             </div>
+            
 
 
 
